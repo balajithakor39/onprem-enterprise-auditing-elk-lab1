@@ -1,0 +1,13 @@
+winlogbeat.event_logs:
+  - name: Security
+  - name: System
+  - name: Application
+  - name: Microsoft-Windows-Sysmon/Operational
+
+setup.kibana:
+  host: "192.78.169.205:5601"
+
+output.logstash:
+  hosts: ["192.78.169.205:5044"]
+
+logging.level: info
